@@ -17,7 +17,7 @@ nome, whatsapp (máscara), email, objetivo (morar/investir), valor de entrada, p
 LP nova em `/` (06/10/2026); teaser antigo em `/teaser/` (noindex). Conferir `.htaccess` + SSL.
 
 ## Decisões de conteúdo (02/10/2026)
-- Seção de casas: CTA = "Quero escolher minha casa!" → redireciona pro simulador (`content/site.json` → `simuladorUrl`).
+- Seção de casas: CTA = "Quero escolher minha casa!" → leva ao formulário (#contato). O simulador saiu do site em 13/11/2026: o link é só dos corretores (Linktree do grupo).
 - Localização: usa `public/images/localizacao/mapa-condominio.webp` (render CONDOMÍNIO/3). Endereço completo e link do Maps ficam `null` até o cliente passar.
 - Pendências: WhatsApp, Instagram, endereço, ícone/favicon.
 

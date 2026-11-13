@@ -70,12 +70,13 @@ h1,.h2,.end h2,.spec b,.vals b,.lamp-line,.end__phr,.card h3,.ft__sig,.cmp__tag,
 .hero{padding-top:clamp(40px,6vw,88px)}
 .hero__grid{display:grid;gap:24px;padding-bottom:clamp(32px,4vw,56px)}
 .hero h1{margin:0;line-height:0}
-.hero__logo .logo{height:auto;width:clamp(260px,40vw,680px);max-width:100%}
+.hero__logo .logo{height:auto;width:clamp(280px,48vw,860px);max-width:100%}
 .hero__aside{display:grid;gap:16px;align-content:end}
 .hero__cta{display:flex;flex-wrap:wrap;gap:10px}
 .hero__hint{font-size:14px;color:var(--ink-2)}
 .hero__sub{font-size:clamp(19px,1.5vw,22px);line-height:1.35;font-weight:600;max-width:28ch}
-@media(min-width:1000px){.hero__grid{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:56px;align-items:end}}
+/* logo centrada na altura do texto ao lado: alinhada embaixo, sobrava um vazio grande em cima */
+@media(min-width:1000px){.hero__grid{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:56px;align-items:center}}
 
 /* comparador dia/noite */
 .cmp{position:relative;overflow:hidden;background:#000;touch-action:pan-y;cursor:ew-resize;--x:50%;user-select:none}
@@ -600,16 +601,6 @@ h1,.h2,.end h2,.spec b,.vals b,.lamp-line,.end__phr,.card h3,.ft__sig,.cmp__tag,
 .ft__brand .logo{height:64px}
 .ft__sig{font-size:clamp(24px,2vw,30px);font-weight:300;line-height:1.2}
 .ft__brand p{color:var(--ink-2);font-size:16px}
-.quick{position:relative}
-.quick input{width:100%;height:52px;padding:0 60px 0 16px;border:1px solid var(--line);border-radius:6px;background:var(--surface);color:var(--ink);font:400 17px var(--f);transition:border-color .2s,box-shadow .2s,background-color .6s}
-.quick input::placeholder{color:var(--ink-2);opacity:.8}
-.quick input:focus{outline:0;border-color:var(--ink);box-shadow:0 0 0 3px rgba(233,162,59,.35)}
-.quick input[aria-invalid]{border-color:var(--err)}
-.quick button{position:absolute;right:6px;top:6px;width:40px;height:40px;border:0;border-radius:50%;background:var(--btn);color:var(--on-btn);display:grid;place-items:center;cursor:pointer;transition:transform .2s var(--ease),background-color .6s}
-.quick button:hover{transform:scale(1.06)}
-.quick button svg{width:18px;height:18px}
-.quick__msg{margin-top:8px;font-size:14px;color:var(--ink-2)}
-.quick__msg.is-err{color:var(--err)}
 .ft h3{font-size:15px;font-weight:700;margin-bottom:16px}
 .ft__nav{display:grid;gap:4px}
 .ft__nav a{display:inline-flex;align-items:center;min-height:32px;color:var(--ink-2);text-decoration:none;font-size:15px;transition:color .2s}
@@ -634,7 +625,7 @@ h1,.h2,.end h2,.spec b,.vals b,.lamp-line,.end__phr,.card h3,.ft__sig,.cmp__tag,
 @media(min-width:900px){.ft__legal{flex-direction:row;align-items:center}}
 
 .dock{position:fixed;left:0;right:0;bottom:0;z-index:45;padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px));background:color-mix(in srgb,var(--bg) 95%,transparent);border-top:1px solid var(--line);transition:transform .3s var(--ease)}
-.dock{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.dock{display:grid}
 .dock .btn{width:100%;padding:0 12px}
 .dock.is-hidden{transform:translateY(110%)}
 @media(min-width:900px){.dock{display:none}}

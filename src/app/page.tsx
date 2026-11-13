@@ -15,6 +15,8 @@ export default function Home() {
       <Header />
       <main id="topo">
         <Hero />
+        {/* condições logo depois do hero: é o que mais pesa na divulgação (pedido do cliente) */}
+        <Condicoes />
         <Localizacao />
         <Condominio />
         <Casas />
@@ -22,7 +24,6 @@ export default function Home() {
         <Fotos />
         <Lazer />
         <Entorno />
-        <Condicoes />
         <Manifesto />
         <Contato />
       </main>

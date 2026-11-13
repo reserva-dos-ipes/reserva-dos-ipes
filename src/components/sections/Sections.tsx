@@ -7,11 +7,9 @@ import { HeroCompare } from "./HeroCompare";
 import { StreetAccordion } from "./StreetAccordion";
 import { LeadForm } from "@/components/forms/LeadForm";
 
-const ext = { target: "_blank", rel: "noopener" } as const;
-
 export function Hero() {
   const t = copy.hero;
-  // a mensal mais baixa dá motivo para o clique no simulador
+  // a mensal mais baixa logo no topo; as condições completas vêm na seção seguinte
   const mensal = copy.condicoes.itens.map(splitValor).find((v) => v && /mensa/i.test(v[0]));
   return (
     <section className="hero" aria-labelledby="h1">
@@ -28,9 +26,6 @@ export function Hero() {
           <div className="hero__cta">
             <a className="btn" href="#contato">
               {t.cta}
-            </a>
-            <a className="btn btn--lamp" href={site.simuladorUrl} {...ext}>
-              {t.ctaSimular}
             </a>
           </div>
           {mensal && <p className="hero__hint">{mensal.join(" ")}</p>}
@@ -123,7 +118,8 @@ export function Casas() {
           <p className="body">
             {t.complemento} {t.fechamento}
           </p>
-          <a className="btn" href={site.simuladorUrl} {...ext}>
+          {/* sem simulador no site, a pedido do cliente: escolher a casa é com o consultor */}
+          <a className="btn" href="#contato">
             {t.cta}
           </a>
         </div>
@@ -158,7 +154,7 @@ export function Condicoes() {
             </div>
           ))}
           <div>
-            <a className="btn" href={site.simuladorUrl} {...ext}>
+            <a className="btn" href="#contato">
               {t.cta}
             </a>
           </div>

@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { copy, nav, site } from "@/lib/content";
+import { nav } from "@/lib/content";
 import { Logo } from "@/components/ui/Logo";
 import { ModeToggle } from "@/components/ui/ModeToggle";
 
@@ -65,9 +65,6 @@ export function Header() {
             <a className="btn btn--line" href="#contato">
               Falar com um consultor
             </a>
-            <a className="btn btn--lamp" href={site.simuladorUrl} target="_blank" rel="noopener">
-              {copy.condicoes.cta}
-            </a>
           </div>
           <button
             ref={menuBtn}
@@ -99,10 +96,7 @@ export function Header() {
         </nav>
         <div>
           <ModeToggle />
-          <a className="btn btn--lamp" href={site.simuladorUrl} target="_blank" rel="noopener">
-            {copy.condicoes.cta}
-          </a>
-          <a className="btn btn--line" href="#contato">
+          <a className="btn" href="#contato">
             Falar com um consultor
           </a>
         </div>

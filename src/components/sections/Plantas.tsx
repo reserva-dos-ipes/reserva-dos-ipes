@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import { copy, plantas, site, type Casa } from "@/lib/content";
+import { copy, plantas, type Casa } from "@/lib/content";
 import { useMode } from "@/lib/mode";
 import { contain, engine, play } from "@/lib/lote";
 import { Planta, plantaSrc } from "@/components/ui/Planta";
@@ -39,7 +39,7 @@ export function Plantas() {
           <p className="pl__legal">
             {t.legal} <span className="pl__ex">{t.exemplo}</span> {copy.rodape.legal}
           </p>
-          <a className="btn" href={site.simuladorUrl} target="_blank" rel="noopener">
+          <a className="btn" href="#contato">
             {t.cta}
           </a>
         </div>

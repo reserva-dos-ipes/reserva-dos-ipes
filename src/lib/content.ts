@@ -13,14 +13,16 @@ export type Rua = (typeof galeria.ruas)[number];
 export type Foto = Rua["fotos"][number];
 export type Ponto = (typeof entorno.pontos)[number] & { detalhe?: string; tempo?: string; borda?: string };
 
+// mesma ordem das seções na página
 export const nav = [
+  { href: "#condicoes", label: "Condições" },
   { href: "#localizacao", label: "Localização" },
   { href: "#condominio", label: "Condomínio" },
   { href: "#casas", label: "Casas" },
   { href: "#plantas", label: "Plantas" },
+  { href: "#fotos", label: "Decorado" },
   { href: "#lazer", label: "Lazer" },
   { href: "#entorno", label: "Entorno" },
-  { href: "#condicoes", label: "Condições" },
 ];
 
 /** "Mensais pré-chaves a partir de R$ 750*" -> ["Mensais pré-chaves a partir de", "R$ 750*"] */

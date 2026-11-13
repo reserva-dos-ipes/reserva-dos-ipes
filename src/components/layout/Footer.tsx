@@ -2,7 +2,6 @@ import { copy, nav, site } from "@/lib/content";
 import { Logo } from "@/components/ui/Logo";
 import { ModeSwitch } from "@/components/ui/ModeToggle";
 import { Instagram, WhatsApp } from "@/components/ui/icons";
-import { QuickContact } from "@/components/forms/QuickContact";
 
 /** Rodapé no padrão footer-section (21st.dev). Redes e política só aparecem quando o link existir em content/site.json. */
 export function Footer() {
@@ -22,8 +21,6 @@ export function Footer() {
           <div className="ft__brand">
             <Logo />
             <p className="ft__sig">{t.assinatura}</p>
-            <p>{t.contatoRapido}</p>
-            <QuickContact />
           </div>
           <div>
             <h3>Navegue</h3>
@@ -33,9 +30,6 @@ export function Footer() {
                   {l.label}
                 </a>
               ))}
-              <a href={site.simuladorUrl} target="_blank" rel="noopener">
-                {copy.condicoes.cta}
-              </a>
             </nav>
           </div>
           <div>

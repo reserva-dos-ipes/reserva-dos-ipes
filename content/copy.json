@@ -3,14 +3,13 @@
     "titulo": "Reserva dos Ipês",
     "subtitulo": "O primeiro condomínio fechado da Morais Engenharia.",
     "descricao": "Casas de 3 quartos com suíte em Senador Canedo, no Parque dos Buritis.",
-    "texto": "Um novo padrão de vida para quem busca segurança, lazer, conforto e a conquista do próprio lar com a confiança de quem já construiu mais de 800 lares.",
+    "texto": "Um novo padrão de vida para quem busca segurança, lazer, conforto e a conquista do próprio lar com a confiança de quem já construiu mais de 1.000 lares.",
     "cta": "Quero conhecer o Reserva dos Ipês",
     "comparar": {
       "dia": "Dia",
       "noite": "Entardecer",
       "label": "Comparar a portaria de dia e ao entardecer"
-    },
-    "ctaSimular": "Quero simular minha condição"
+    }
   },
   "form": {
     "campos": [
@@ -60,7 +59,6 @@
     ],
     "fechamento": "Aqui, cada detalhe foi pensado para quem deseja conquistar mais do que uma casa: deseja conquistar um lugar para chamar de seu.",
     "cta": "Quero escolher minha casa!",
-    "ctaLink": "simuladorUrl",
     "complemento": "Casas independentes, com espaço para ampliar seus sonhos."
   },
   "lazer": {
@@ -95,7 +93,7 @@
       "Mensais pré-chaves a partir de R$ 860*",
       "Sinal a partir de R$ 1.000*"
     ],
-    "cta": "Simular minha condição"
+    "cta": "Falar com um consultor"
   },
   "manifesto": {
     "titulo": "Sua vida floresce aqui.",
@@ -120,7 +118,6 @@
     "assinatura": "Sua vida floresce aqui.",
     "construtora": "Morais Engenharia",
     "local": "Parque dos Buritis | Senador Canedo",
-    "contatoRapido": "Deixe seu WhatsApp e um consultor da Morais Engenharia fala com você.",
     "legal": "Imagens meramente ilustrativas."
   },
   "juridico": "Condições válidas até 30/11/2026 e limitadas às unidades participantes disponíveis. Sinal a partir de R$ 1.000 reais na primeira parcela e com mais três parcelas no valor de R$ 3.000 cada uma. Valores, sinal e parcelas referentes à unidade 10. Podendo variar conforme tipologia, unidade e plano de pagamento. Financiamento sujeito à análise e aprovação da instituição financeira; parcelamento direto sujeito à análise cadastral e de crédito pela incorporadora. Possibilidade de enquadramento no MCMV conforme regras vigentes. Imagens ilustrativas; itens entregues conforme Memorial Descritivo. RI R.3-64.602, registrado no Cartório de Registro de Imóveis da comarca de Senador Canedo – GO."
